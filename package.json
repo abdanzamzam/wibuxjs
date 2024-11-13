@@ -1,0 +1,50 @@
+{
+  "name": "wibuxjs",
+  "version": "1.0.0",
+  "description": "Wibux.js Monolithic Boilerplate for Express.js &amp; React.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run server",
+    "client": "npm start --prefix frontend",
+    "server": "node --watch bin/www",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix frontend",
+    "test": "jest",
+    "test:backend": "npm run test-be",
+    "test:frontend": "npm run test --workspace frontend"
+  },
+  "keywords": [
+    "wibuxjs",
+    "expressjs",
+    "reactjs",
+    "monolithic"
+  ],
+  "author": "abdanzamzam",
+  "license": "ISC",
+  "workspaces": [
+    "frontend"
+  ],
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.5",
+    "ejs": "~2.6.1",
+    "express": "^4.21.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "mysql2": "^3.11.4",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "jest": "^27.5.1",
+    "sequelize-cli": "^6.6.2",
+    "supertest": "^7.0.0"
+  }
+}
