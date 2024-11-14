@@ -1,0 +1,51 @@
+{
+  "name": "wibuxjs",
+  "version": "1.0.0",
+  "description": "Wibux.js Monolithic Boilerplate for Express.js &amp; React.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch app.js",
+    "build": "webpack --config webpack.config.js",
+    "watch": "npx webpack --config webpack.config.js --watch",
+    "dev": "concurrently \"npm start\" \"npm run watch\""
+  },
+  "keywords": [
+    "wibuxjs",
+    "express",
+    "react"
+  ],
+  "author": "abdanzamzam",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.5",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "ignore-styles": "^5.0.1",
+    "js-beautify": "^1.15.1",
+    "lodash.escaperegexp": "^4.1.2",
+    "morgan": "~1.9.1",
+    "object-assign": "^4.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/register": "^7.25.9",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
