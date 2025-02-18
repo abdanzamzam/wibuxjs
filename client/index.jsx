@@ -2,7 +2,7 @@ import React from 'react';
 import { hydrateRoot } from 'react-dom/client'; // React 18
 
 // Dynamic import to support CommonJS and ES Modules
-import components from '../routes/components';
+import components from '../routes/pages';
 
 // Retrieve the component name sent from the server
 const componentName = window.__INITIAL_COMPONENT__;
