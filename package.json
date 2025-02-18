@@ -5,7 +5,9 @@
   "main": "bin/www",
   "private": true,
   "scripts": {
-    "start": "node --watch ./bin/www"
+    "start": "node --watch ./bin/www",
+    "build:dev": "npx webpack --mode=development --watch",
+    "build:prod": "npx webpack --mode=production"
   },
   "author": "abdanzamzam",
   "license": "MIT",
@@ -15,6 +17,7 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "react-express-view": "^1.0.2"
   }
 }
