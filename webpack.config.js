@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: './client/index.jsx', // Entry point for React client-side
+    entry: './views/index.jsx', // Entry point for React client-side
     output: {
         path: path.resolve(__dirname, 'public/js'),
         filename: 'bundle.js', // Output file

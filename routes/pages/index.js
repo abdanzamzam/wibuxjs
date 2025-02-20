@@ -1,3 +1,3 @@
 module.exports = {
-    Home: require('../../views/Home')
+    App: require('../../views/App')
 };
