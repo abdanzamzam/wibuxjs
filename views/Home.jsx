@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Counter from '../components/Counter';
+import Navbar from './components/Navbar';
+import Counter from './components/Counter';
 
 export default function Home({ title, message }) {
     return (

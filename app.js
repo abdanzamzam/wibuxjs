@@ -6,7 +6,6 @@ const logger = require('morgan');
 const reactExpressView = require('react-express-view');
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
 
 const app = express();
 

@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-    entry: './views/index.jsx', // Entry point for React client-side
+    entry: './views/index.js',
     output: {
         path: path.resolve(__dirname, 'public/js'),
-        filename: 'bundle.js', // Output file
+        filename: 'bundle.js',
     },
     module: {
         rules: [
