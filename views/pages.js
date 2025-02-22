@@ -1,5 +1,9 @@
-module.exports = {
-    Home: require('./Home'),
-    Contact: require('./Contact'),
-    About: require('./About')
-}
+import Home from './Home';
+import Contact from './Contact';
+import About from './About';
+
+export default {
+    Home,
+    Contact,
+    About
+};
