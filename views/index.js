@@ -1,5 +1,6 @@
 import React from 'react';
 import { hydrateRoot } from 'react-dom/client';
+import '../public/css/tailwind.css';
 import pages from './pages';
 
 const componentName = window.__INITIAL_COMPONENT__;

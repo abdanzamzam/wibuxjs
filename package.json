@@ -6,12 +6,15 @@
   "private": true,
   "scripts": {
     "start": "node --watch ./bin/www",
+    "dev": "concurrently \"npm run start\" \"npm run build:dev\" \"npm run tailwind:dev\"",
     "build:dev": "npx webpack --mode=development --watch",
-    "build:prod": "npx webpack --mode=production"
+    "build:prod": "npx webpack --mode=production",
+    "tailwind:dev": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/tailwind.css --watch"
   },
   "author": "abdanzamzam",
   "license": "MIT",
   "dependencies": {
+    "@tailwindcss/cli": "^4.0.8",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
@@ -19,5 +22,11 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
     "react-express-view": "^1.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "css-loader": "^7.1.2",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0"
   }
 }
